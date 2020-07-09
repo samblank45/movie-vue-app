@@ -80,7 +80,7 @@ export default {
       };
       axios.post("/api/movies", params).then(response => {
         console.log("success", response.data);
-        this.movies.push(response.data);
+        this.movies.push("/movies");
       });
     },
     showMovie: function(movie) {
