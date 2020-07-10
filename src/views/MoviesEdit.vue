@@ -3,7 +3,7 @@
   <div class="movies-new">
 
     <form v-on:submit.prevent="editMovie()">
-      <h1>New Movie</h1>
+      <h1>Update Movie</h1>
        <ul>
         <li class="text-danger" v-for="error in errors">{{ error }}</li>
       </ul>

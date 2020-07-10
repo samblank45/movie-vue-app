@@ -12,7 +12,9 @@
         <input type="text" class="form-control" v-model="title">
       </div>
       <div class="form-group">
-        <label>plot:</label>
+        <label>plot:</label> <br>
+        <small class="text-success" v-if="plot.length <= 50"> Characters remaining: {{50 - plot.length}}</small>
+        <small class="text-danger" v-if="plot.length > 50"> Exceeded character limit.</small>
         <input type="text" class="form-control" v-model="plot">
       </div>
       <div class="form-group">
